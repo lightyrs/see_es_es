@@ -1,23 +1,20 @@
-development:
+common: &common
   adapter: mysql2
   encoding: utf8
+  reconnect: false
+  pool: 5
   username: root
   password: matt22
   socket: /tmp/mysql.sock
+
+development:
+  <<: *common
   database: see_es_es_development
 
 test:
-  adapter: mysql2
-  encoding: utf8
-  username: root
-  password: matt22
-  socket: /tmp/mysql.sock
+  <<: *common
   database: see_es_es_test
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  username: root
-  password: matt22
-  socket: /tmp/mysql.sock
+  <<: *common
   database: see_es_es_production
