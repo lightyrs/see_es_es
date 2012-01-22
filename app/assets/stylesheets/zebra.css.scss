@@ -42,6 +42,7 @@ body.zebra {
           width: 65px;
           margin: 10px 0 0 -6px;
           background: teal;
+					opacity: 0.3;
           -webkit-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
           -moz-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
           -ms-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
@@ -52,7 +53,7 @@ body.zebra {
         &.downslope {
           width: 68px;
           margin-top: -6px;
-          background: aqua;
+          background: teal;
           -webkit-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
           -moz-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
           -ms-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
