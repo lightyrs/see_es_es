@@ -1,50 +1,64 @@
 body.zebra {
-  background: image_url('/assets/patterns/subtle_zebra_3d.png');
 
-  .zebra-wrapper {
-    float: left;
-    margin: 40px 0 0;
-    width: 728px;
+  .background {
+    top: 0;
+    bottom: 0;
+    background: url(/assets/patterns/subtle_zebra_3d.png);
+    left: 0;
+    position: fixed;
+    right: 0;
   }
 
-  .zebra-stripes {
-    width: 132px;
+  .column {
+    width: 121px;
+    height: 93%;
     float: left;
-    padding: 60px 0 0;
-    margin: 0 -11px 0 0;
 
-    .zebra {
+    .zebra-stripes {
+      width: 132px;
       float: left;
-      width: 62px;
-      height: 7px;
-      background: red;
-      opacity: 0.2;
-      margin-bottom: 2px;
-      zoom: 1;
-      -webkit-transform-origin: 0 100%;
-         -moz-transform-origin: 0 100%;
-          -ms-transform-origin: 0 100%;
-           -o-transform-origin: 0 100%;
-              transform-origin: 0 100%;
+      padding: 0;
+      margin: 0 -11px 0 0;
 
-      &.upslope {
-        width: 65px;
-        margin-left: -6px;
-        -webkit-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
-        -moz-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
-        -ms-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
-        -o-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
-        transform: skewX(14deg) skewY(-29deg) rotate(17deg);
-      }
+      .zebra {
+        float: left;
+        width: 62px;
+        height: 7px;
+        background: red;
+        opacity: 0.2;
+        margin-bottom: 2px;
+        zoom: 1;
+        -webkit-transform-origin: 0 100%;
+           -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+             -o-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+        -webkit-box-shadow: 0 2px 3px 0px rgba(0,0,0,0.2);
+           -moz-box-shadow: 0 2px 3px 0px rgba(0,0,0,0.2);
+                box-shadow: 0 2px 3px 0px rgba(0,0,0,0.2);
 
-      &.downslope {
-        width: 68px;
-        margin-top: -6px;
-        -webkit-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
-        -moz-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
-        -ms-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
-        -o-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
-        transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
+
+        &.upslope {
+          width: 65px;
+          margin: 10px 0 0 -6px;
+          background: teal;
+          -webkit-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
+          -moz-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
+          -ms-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
+          -o-transform: skewX(14deg) skewY(-29deg) rotate(17deg);
+          transform: skewX(14deg) skewY(-29deg) rotate(17deg);
+        }
+
+        &.downslope {
+          width: 68px;
+          margin-top: -6px;
+          background: aqua;
+          -webkit-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
+          -moz-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
+          -ms-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
+          -o-transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
+          transform: skewX(-14deg) skewY(29deg) rotate(-17deg);
+        }
       }
     }
   }
