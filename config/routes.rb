@@ -1,4 +1,4 @@
 SeeEsEs::Application.routes.draw do
 
-  root :to => "diamond#index"
+  root :to => "zebra#index"
 end
